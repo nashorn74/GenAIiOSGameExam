@@ -1,24 +1,125 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GenAIiOSGameExam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main01" translatesAutoresizingMaskIntoConstraints="NO" id="ySV-1s-EPD">
+                                <rect key="frame" x="0.0" y="76.666666666666686" width="393" height="698.66666666666652"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ySV-1s-EPD" secondAttribute="height" multiplier="9:16" id="caS-bA-035"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="koh-15-7mc">
+                                <rect key="frame" x="46.666666666666657" y="468" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Yab-vt-zc0"/>
+                                    <constraint firstAttribute="width" constant="300" id="opt-ON-f1y"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="새로운 게임 시작하기"/>
+                                <buttonConfiguration key="configuration" style="filled" title="새로운 게임 시작하기"/>
+                            </button>
+                            <button opaque="NO" alpha="0.60000002384185791" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SDN-EA-Wqv">
+                                <rect key="frame" x="46.666666666666657" y="528" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="fbs-of-O5q"/>
+                                    <constraint firstAttribute="width" constant="300" id="jIO-tH-vpe"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="새로운 게임 시작하기"/>
+                                <buttonConfiguration key="configuration" style="filled" title="이전 게임 불러오기"/>
+                            </button>
+                            <button opaque="NO" alpha="0.60000002384185791" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AhE-oS-v4v">
+                                <rect key="frame" x="46.666666666666657" y="588" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="aJE-1x-sMN"/>
+                                    <constraint firstAttribute="width" constant="300" id="r1S-vn-dHD"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="새로운 게임 시작하기"/>
+                                <buttonConfiguration key="configuration" style="filled" title="이벤트 CG 보기"/>
+                            </button>
+                            <button opaque="NO" alpha="0.60000002384185791" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ubt-O1-Qpd">
+                                <rect key="frame" x="46.666666666666657" y="648" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="ma4-aT-U7F"/>
+                                    <constraint firstAttribute="height" constant="50" id="n25-Fv-dbY"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="새로운 게임 시작하기"/>
+                                <buttonConfiguration key="configuration" style="filled" title="환경설정"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Written scripts by ChatGPT 4o Generated images by CalicoMix in tensor.art Generated musics by Udio BGM : Dreaming Together" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WGq-Vt-lJj">
+                                <rect key="frame" x="46.666666666666657" y="708" width="300" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="FJ3-bJ-Dfe"/>
+                                    <constraint firstAttribute="height" constant="60" id="qQ9-5Z-Iz7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="하트비트 아이돌" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IGh-81-1om">
+                                <rect key="frame" x="96.666666666666686" y="109" width="200" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="KQU-ta-cRb"/>
+                                    <constraint firstAttribute="height" constant="40" id="oi4-RI-6Th"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ySV-1s-EPD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="2L8-Op-yNa"/>
+                            <constraint firstItem="IGh-81-1om" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="54K-q4-nqw"/>
+                            <constraint firstItem="ubt-O1-Qpd" firstAttribute="top" secondItem="AhE-oS-v4v" secondAttribute="bottom" constant="10" id="AMp-uV-rrD"/>
+                            <constraint firstItem="ySV-1s-EPD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EA6-zM-pBr"/>
+                            <constraint firstItem="AhE-oS-v4v" firstAttribute="top" secondItem="SDN-EA-Wqv" secondAttribute="bottom" constant="10" id="HI4-kv-TPv"/>
+                            <constraint firstItem="ubt-O1-Qpd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NUh-dA-rxk"/>
+                            <constraint firstItem="AhE-oS-v4v" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TeH-Fc-ADa"/>
+                            <constraint firstItem="WGq-Vt-lJj" firstAttribute="top" secondItem="ubt-O1-Qpd" secondAttribute="bottom" constant="10" id="VqO-l6-dkk"/>
+                            <constraint firstItem="SDN-EA-Wqv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YNA-88-Q5a"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WGq-Vt-lJj" secondAttribute="bottom" constant="50" id="Yl7-eQ-UzY"/>
+                            <constraint firstItem="WGq-Vt-lJj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ac3-aJ-Rdd"/>
+                            <constraint firstItem="ySV-1s-EPD" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="arh-SV-BFg"/>
+                            <constraint firstItem="koh-15-7mc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="b0M-UE-JjQ"/>
+                            <constraint firstItem="IGh-81-1om" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="rdf-UU-cuT"/>
+                            <constraint firstItem="koh-15-7mc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tFt-dz-H6q"/>
+                            <constraint firstItem="SDN-EA-Wqv" firstAttribute="top" secondItem="koh-15-7mc" secondAttribute="bottom" constant="10" id="xxk-Ph-k3s"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-28.244274809160306" y="3.5211267605633805"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="main01" width="414" height="736"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
